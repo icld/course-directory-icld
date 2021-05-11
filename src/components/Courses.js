@@ -7,9 +7,8 @@ import {
 
 
 // components
-import CSS from './courses/CSS'
-import HTML from './courses/HTML'
-import JavaScript from './courses/JavaScript'
+import CourseContainer from './courses/CourseContainer';
+import { HTMLCourses, CSSCourses, JSCourses } from '../data/courses';
 
 const Courses = ({ match }) => (
   <div className="main-content courses">
@@ -24,9 +23,9 @@ const Courses = ({ match }) => (
 
 
     <Route exact path={match.path} render={() => <Redirect to={`${match.path}/html`} />}></Route>
-    <Route path={`${match.path}/html`} component={HTML}></Route>
-    <Route path={`${match.path}/css`} component={CSS}></Route>
-    <Route path={`${match.path}/javascript`} component={JavaScript}></Route>
+    <Route path={`${match.path}/html`} render={() => <CourseContainer data={HTMLCourses} />} />
+    <Route path={`${match.path}/css`} render={() => <CourseContainer data={CSSCourses} />} />
+    <Route path={`${match.path}/javascript`} render={() => <CourseContainer data={JSCourses} />} />
 
   </div>
 );
