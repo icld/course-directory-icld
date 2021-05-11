@@ -12,8 +12,11 @@ class Home extends Component {
         <p>We have thousands of videos created by expert teachers on web design and front end development. Our library is continually refreshed with the latest on web technology so you will never fall behind.</p>
         <hr />
         <h3>Featured Teachers</h3>
-        <Link to="teachers/HTML/Tommy-Wingo">Tommy Wingo</Link>
-        <Link to="teachers/CSS/Dicky-Doesstuff">Dicky Doesstuff</Link>
+        <form>
+          <input type="text" placholder="Name" />
+          <input type="text" placholder="Topic" />
+          <button type="submit">Go!</button>
+        </form>
 
       </div>
     );
