@@ -2,6 +2,7 @@
   "name": "course-directory",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://icld.github.io/course-directory-icld",
   "devDependencies": {
     "react-scripts": "1.0.6"
   },
