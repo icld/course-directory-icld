@@ -16,7 +16,7 @@ import Featured from './Featured';
 
 const App = () => (
   <BrowserRouter>
-    <div className="container">
+    <div className="container" basename="/course-directory">
       <Header />
       {/* Switch only renders first match the matches url, then stops looking.  if it can't find something, then it renders catch-all Not Found Component */}
       <Switch>
